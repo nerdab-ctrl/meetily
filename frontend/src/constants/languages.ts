@@ -19,7 +19,7 @@ export const LANGUAGES = [
   { code: 'sv', name: 'Swedish' },
   { code: 'it', name: 'Italian' },
   { code: 'id', name: 'Indonesian' },
-  { code: 'hi', name: 'Hindi' },
+  { code: 'hi', name: 'Hindi / Hinglish (Hindi + English)' },
   { code: 'fi', name: 'Finnish' },
   { code: 'vi', name: 'Vietnamese' },
   { code: 'he', name: 'Hebrew' },
