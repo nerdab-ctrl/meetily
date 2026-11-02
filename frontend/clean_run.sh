@@ -39,6 +39,16 @@ pnpm run build
 # Set environment variables for the build
 echo "Setting up build environment..."
 
+# tauri.conf.json bundles binaries/llama-helper as a sidecar; tauri dev fails without it
+echo "Building llama-helper sidecar..."
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+LLAMA_FEATURES=""
+[[ "$OSTYPE" == "darwin"* && "$(uname -m)" == "arm64" ]] && LLAMA_FEATURES="--features metal"
+(cd "$SCRIPT_DIR/../llama-helper" && cargo build $LLAMA_FEATURES)
+TARGET_TRIPLE=$(rustc -vV | awk '/host:/{print $2}')
+mkdir -p "$SCRIPT_DIR/src-tauri/binaries"
+cp "$SCRIPT_DIR/../target/debug/llama-helper" "$SCRIPT_DIR/src-tauri/binaries/llama-helper-$TARGET_TRIPLE"
+
 echo "Building Tauri app..."
 pnpm run tauri dev
 sleep
