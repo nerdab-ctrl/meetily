@@ -1,0 +1,32 @@
+{
+  "name": "Leadership Update (SCR)",
+  "description": "Outcome-first SCR summary for leadership, GMD and investor-facing discussions.",
+  "sections": [
+    {
+      "title": "So What",
+      "instruction": "One or two sentences leading with the single most important outcome or decision. Use actual numbers, no vague words like significant or strong.",
+      "format": "paragraph"
+    },
+    {
+      "title": "Situation",
+      "instruction": "One crisp line of context only. Assume the audience is fully briefed.",
+      "format": "paragraph"
+    },
+    {
+      "title": "Complication",
+      "instruction": "What is blocking, at risk or off-track. Include numbers, owners and cities where stated. Flag any figure that was estimated.",
+      "format": "list"
+    },
+    {
+      "title": "Resolution",
+      "instruction": "Decisions made and the agreed approach. State outcomes, not process.",
+      "format": "list"
+    },
+    {
+      "title": "Action Items",
+      "instruction": "Every assigned task with owner and a specific deadline. If no deadline was stated write 'Not set'. Add reference transcript segment and timestamp.",
+      "format": "list",
+      "item_format": "| **Owner** | Action | Deadline | Reference Transcript Segment | Segment Time stamp |\n| --- | --- | --- | --- | --- |"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "GMD / CDM Performance Review",
+  "description": "Review of a city, GMD or CDM: numbers, gaps, commitments, deadlines.",
+  "sections": [
+    {
+      "title": "Headline",
+      "instruction": "One line: is this city/person on track or not, with the key number.",
+      "format": "string"
+    },
+    {
+      "title": "Numbers Discussed",
+      "instruction": "Table of every metric mentioned (leads, conversion, bookings, NGMV, CGMV, collections) with target vs actual. Mark gaps as (not stated) rather than guessing.",
+      "format": "list",
+      "item_format": "| Metric | Target | Actual | Gap |\n| --- | --- | --- | --- |"
+    },
+    {
+      "title": "Gaps and Root Causes",
+      "instruction": "Specific gaps and the cause given for each. Separate facts stated from opinions.",
+      "format": "list"
+    },
+    {
+      "title": "Commitments Made",
+      "instruction": "What each person committed to, with the number they committed to and by when.",
+      "format": "list"
+    },
+    {
+      "title": "Action Items",
+      "instruction": "Assigned tasks with owner and deadline, plus reference transcript segment and timestamp.",
+      "format": "list",
+      "item_format": "| **Owner** | Action | Deadline | Reference Transcript Segment | Segment Time stamp |\n| --- | --- | --- | --- | --- |"
+    }
+  ]
+}

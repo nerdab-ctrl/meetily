@@ -1,0 +1,32 @@
+{
+  "name": "Builder / Developer Partnership",
+  "description": "Meetings with builders and real estate developers for lead-generation partnerships.",
+  "sections": [
+    {
+      "title": "Outcome",
+      "instruction": "One line: where this partnership stands and the next step.",
+      "format": "string"
+    },
+    {
+      "title": "Project and Counterparty",
+      "instruction": "Developer, project name, location, unit count, possession timeline, and who attended from their side.",
+      "format": "list"
+    },
+    {
+      "title": "Commercial Terms Discussed",
+      "instruction": "Pricing, commission, exclusivity, package scope, payment terms. Only what was actually said.",
+      "format": "list"
+    },
+    {
+      "title": "Objections and Concerns",
+      "instruction": "Concerns raised by the builder and how they were answered.",
+      "format": "list"
+    },
+    {
+      "title": "Next Steps",
+      "instruction": "Owner, action and deadline, plus reference transcript segment and timestamp.",
+      "format": "list",
+      "item_format": "| **Owner** | Action | Deadline | Reference Transcript Segment | Segment Time stamp |\n| --- | --- | --- | --- | --- |"
+    }
+  ]
+}

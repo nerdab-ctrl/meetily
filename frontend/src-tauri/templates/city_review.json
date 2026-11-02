@@ -1,0 +1,33 @@
+{
+  "name": "City Business Review",
+  "description": "Funnel-based review of a market: MQL to ECV to Net Bookings to NGMV.",
+  "sections": [
+    {
+      "title": "So What",
+      "instruction": "The one insight that matters most for this city, with numbers.",
+      "format": "paragraph"
+    },
+    {
+      "title": "Funnel Status",
+      "instruction": "Each funnel stage discussed (MQL, ECV, Net Bookings, NGMV) with the number and the conversion between stages where stated.",
+      "format": "list",
+      "item_format": "| Stage | Number | Conversion to next | Comment |\n| --- | --- | --- | --- |"
+    },
+    {
+      "title": "Levers Identified",
+      "instruction": "Which conversion or input was identified as the control lever and what was decided about it.",
+      "format": "list"
+    },
+    {
+      "title": "Risks and Dependencies",
+      "instruction": "Hiring, capacity, builder pipeline or market risks raised.",
+      "format": "list"
+    },
+    {
+      "title": "Action Items",
+      "instruction": "Owner, action, deadline, reference transcript segment and timestamp.",
+      "format": "list",
+      "item_format": "| **Owner** | Action | Deadline | Reference Transcript Segment | Segment Time stamp |\n| --- | --- | --- | --- | --- |"
+    }
+  ]
+}
